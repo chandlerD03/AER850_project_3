@@ -29,6 +29,16 @@ masked_img = cv2.bitwise_and(img_real, mask)
 
 
 
+plt.figure(figsize=(16,16))
+plt.imshow(edges, cmap="gray")
+plt.axis("off")
+plt.title("Edge Detection")
+
+plt.figure(figsize=(16,16))
+plt.imshow(cv2.cvtColor(mask, cv2.COLOR_BGR2RGB))
+plt.axis("off")
+plt.title("Mask")
+
 plt.figure(figsize=(16, 16)) 
 plt.imshow(cv2.cvtColor(masked_img, cv2.COLOR_BGR2RGB))
 plt.axis("off")
