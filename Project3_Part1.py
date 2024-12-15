@@ -30,7 +30,7 @@ masked_img = cv2.bitwise_and(img_real, mask)
 
 
 plt.figure(figsize=(16,16))
-plt.imshow(edges, cmap="gray")
+plt.imshow(edges, cmap="inferno")
 plt.axis("off")
 plt.title("Edge Detection")
 
